@@ -2,29 +2,32 @@
 
 import java.util.*;
 
-class Mobile{
-    
 
-    public void show()
+class Human{
+    int age;
+    String name;
+
+    public Human( int age , String name)
     {
-        System.out.println("this is non statidc method");
+       this.age=age;
+       this.name=name;
     }
 
-    public static void show1()
+
+    public void getInformation()
     {
-        System.out.println("this is statidc method");
+        System.out.println("name is "+name);
+        System.out.println("age is "+age);
     }
 }
 
 public class Demo {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-       
-      Mobile m = new Mobile();
-      m.show();
-      Mobile.show1();
-       
+      
+       Human h = new Human(24,"fariyad");
+
+       h.getInformation();
         
         
     
