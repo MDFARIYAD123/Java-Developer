@@ -1,4 +1,4 @@
-// STATIC VARIABLE
+// This keyword is  remaining to study
 
 import java.util.*;
 
