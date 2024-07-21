@@ -7,28 +7,41 @@ class Human{
     int age;
     String name;
 
-    public Human( int age , String name)
-    {
+   
+   public void setAge(int age)
+   {
        this.age=age;
-       this.name=name;
-    }
+   }
+
+ public void setName(String name)
+ {
+     this.name=name;
+ }
+
+  public int getAge()
+{
+    return age;
+}
+public String getName()
+{
+    return name;
+}
 
 
-    public void getInformation()
-    {
-        System.out.println("name is "+name);
-        System.out.println("age is "+age);
-    }
+
+    
 }
 
 public class Demo {
 
     public static void main(String[] args) {
       
-       Human h = new Human(24,"fariyad");
+       Human h = new Human();
+       h.setAge(34);
+       h.setName("fariyad");
 
-       h.getInformation();
-        
+        System.out.print("age is " +h.getAge());
+        System.out.print("age is " +h.getName());
         
     
 
