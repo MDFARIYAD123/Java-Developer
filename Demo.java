@@ -6,18 +6,18 @@ import java.util.*;
 class Human{
     int age;
     String name;
+    
+     public Human( int age , String name)
+     {
+        this.age=age;
+        this.name=name;
 
+
+     }
    
-   public void setAge(int age)
-   {
-       this.age=age;
-   }
+   
 
- public void setName(String name)
- {
-     this.name=name;
- }
-
+ 
   public int getAge()
 {
     return age;
@@ -36,9 +36,8 @@ public class Demo {
 
     public static void main(String[] args) {
       
-       Human h = new Human();
-       h.setAge(34);
-       h.setName("fariyad");
+       Human h = new Human(12,"fariyad");
+      
 
         System.out.print("age is " +h.getAge());
         System.out.print("age is " +h.getName());
