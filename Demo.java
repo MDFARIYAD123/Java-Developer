@@ -3,44 +3,24 @@
 import java.util.*;
 
 
-class Human{
-    int age;
-    String name;
-    
-     public Human( int age , String name)
-     {
-        this.age=age;
-        this.name=name;
 
-
-     }
-   
-   
-
- 
-  public int getAge()
-{
-    return age;
-}
-public String getName()
-{
-    return name;
-}
-
-
-
-    
+class A{
+    public void show()
+    {
+        System.out.println("in A show");
+    }
 }
 
 public class Demo {
 
     public static void main(String[] args) {
       
-       Human h = new Human(12,"fariyad");
+       A h = new A();
+       h.show();
       
 
-        System.out.print("age is " +h.getAge());
-        System.out.print("age is " +h.getName());
+        
+        
         
     
 
