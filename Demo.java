@@ -15,8 +15,8 @@ public class Demo {
 
     public static void main(String[] args) {
       
-       A h = new A();
-       h.show();
+     new A().show();//Anonmoys objects
+       
       
 
         
