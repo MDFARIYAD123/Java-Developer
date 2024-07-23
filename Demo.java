@@ -4,21 +4,31 @@ import java.util.*;
 
 
 
-class A{
-    public void show()
+class Cal{
+    public int add(int x , int y)
     {
-        System.out.println("in A show");
+        return x+y;
     }
+    public int sub(int x, int y)
+    {
+        return x-y;
+    }
+
+
 }
+
 
 public class Demo {
 
     public static void main(String[] args) {
       
-       A h = new A();
-       h.show();
-      
+       Cal c = new Cal();
 
+        int result1=c.add(12,334);
+       int result2 =c.sub(34,98);
+      
+   System.out.println("sum is "+result1);
+   System.out.println("sub is "+result2);
         
         
         
