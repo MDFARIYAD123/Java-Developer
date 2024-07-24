@@ -1,31 +1,30 @@
-// This is inheritance 
+// METHOD OVERRIDING
 
 import java.util.*;
 
-class Cal{
-    public int add(int x , int y)
+class A{
+
+    public void show()
     {
-        return x+y;
-    }
-    public int sub(int x, int y)
-    {
-        return x-y;
-    }
+        System.out.println("in  A  Show");
+    } 
+    
+    
+    
+
+
 
 
 }
 
-class AdvanceCal extends Cal{
+class B extends  A{
 
-    public int mul(int x, int y)
+    public void show()
     {
-        return x*y;
+        System.out.println("in B Show");
     }
-    public int div(int x, int y)
-    {
-        return x/y;
-    }
-
+    
+    
 
 }
 
@@ -34,21 +33,15 @@ public class Demo {
 
     public static void main(String[] args) {
       
-       AdvanceCal c = new AdvanceCal();
+       B obj = new B();
 
-        int result1=c.add(12,334);
-       int result2 =c.sub(34,98); 
-       
-       
-       int result3 =c.mul(34,98); 
-       int result4 =c.div(34,98);
+       obj.show();
+
+
 
 
       
-   System.out.println("sum is "+result1);
-   System.out.println("sub is "+result2);
-   System.out.println("mul is "+result3);
-   System.out.println("div is "+result4);
+  
 
 
         
