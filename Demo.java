@@ -1,54 +1,14 @@
-// METHOD OVERRIDING
+// ARRAY
 
 import java.util.*;
 
-class A{
-
-    public void show()
-    {
-        System.out.println("in  A  Show");
-    } 
-    
-    
-    
-
-
-
-
-}
-
-class B extends  A{
-
-    public void show()
-    {
-        System.out.println("in B Show");
-    }
-    
-    
-
-}
-
-
 public class Demo {
 
-    public static void main(String[] args) {
-      
-       B obj = new B();
+  public static void main(String[] args) {
 
-       obj.show();
+    int[] nums = { 20, 30, 40, 50 };
+    for (int ele : nums)
+      System.out.println(ele);
 
-
-
-
-      
-  
-
-
-        
-        
-        
-    
-
-    }
+  }
 }
-
