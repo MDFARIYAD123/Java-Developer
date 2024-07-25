@@ -1,29 +1,29 @@
-//  object of array
+//  ABSTRACT CLASS
+// ABSTRACT CLASS CAN HAVE ABSTRACT METHOD AND NORAML METHODS BUT ABSTRACT METHOD ALWAY BE IN ONLY ABSTRACT CLASS ONLY AND ABSTRACT CLASS OBJECT WE CAN CREATE
 
 import java.util.*;
 
-class Human {
-  public int x = 10;
-  public int y = 887;
+abstract class Car {
+  public abstract void drive();
 
+  public void playMusic() {
+    System.out.println("Playing music");
+  }
+}
+
+class Wagonar extends Car {
+  public void drive() {
+    System.out.println("driving a car in wagonar");
+  }
 }
 
 public class Demo {
 
   public static void main(String[] args) {
 
-    Human h1 = new Human();
-    Human h2 = new Human();
-    Human h3 = new Human();
-    Human[] arr = new Human[3];
-    arr[0] = h1;
-    arr[1] = h2;
-    arr[2] = h3;
-
-    for (Human value : arr) {
-      System.out.println(value.x);
-      System.out.println(value.y);
-    }
+    Wagonar w = new Wagonar();
+    w.drive();
+    w.playMusic();
 
   }
 }
