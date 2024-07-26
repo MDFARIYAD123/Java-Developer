@@ -1,19 +1,22 @@
 //  ABSTRACT CLASS
-// ABSTRACT CLASS CAN HAVE ABSTRACT METHOD AND NORAML METHODS BUT ABSTRACT METHOD ALWAY BE IN ONLY ABSTRACT CLASS ONLY AND ABSTRACT CLASS OBJECT WE CAN CREATE
+// ABSTRACT CLASS CAN HAVE ABSTRACT METHOD AND NORAML METHODS BUT ABSTRACT METHOD ALWAY BE IN ONLY ABSTRACT CLASS ONLY AND ABSTRACT CLASS OBJECT WE CAN NOT CREATE
 
+// INTERFACE CAN HAVE ONLY METHOD DECLARATIONS AND WE  CAN NOT CREATE OBJECT OF INTERFACE 
 import java.util.*;
 
-abstract class Car {
-  public abstract void drive();
+interface A {
+  void show();
 
-  public void playMusic() {
-    System.out.println("Playing music");
-  }
+  void get();
 }
 
-class Wagonar extends Car {
-  public void drive() {
-    System.out.println("driving a car in wagonar");
+class B implements A {
+  public void show() {
+    System.out.print("this is show");
+  }
+
+  public void get() {
+    System.out.println("this is get");
   }
 }
 
@@ -21,9 +24,10 @@ public class Demo {
 
   public static void main(String[] args) {
 
-    Wagonar w = new Wagonar();
-    w.drive();
-    w.playMusic();
+    B obj = new B();
+
+    obj.show();
+    obj.get();
 
   }
 }
