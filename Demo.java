@@ -3,31 +3,23 @@
 
 // INTERFACE CAN HAVE ONLY METHOD DECLARATIONS AND WE  CAN NOT CREATE OBJECT OF INTERFACE 
 import java.util.*;
-
-interface A {
-  void show();
-
-  void get();
+interface A{
+  int  add(int x,int y);
 }
 
-class B implements A {
-  public void show() {
-    System.out.print("this is show");
-  }
 
-  public void get() {
-    System.out.println("this is get");
-  }
-}
 
 public class Demo {
 
   public static void main(String[] args) {
 
-    B obj = new B();
-
-    obj.show();
-    obj.get();
-
+    A obj= (x,y)-> x+y;
+    
+    
+      
+    
+    int result = obj.add(10,20);
+    System.out.print("sum is "+result);
+   
   }
 }
